@@ -3,7 +3,7 @@ PATH
   specs:
     icon-banner (0.2.2)
       fastlane (~> 2.100)
-      mini_magick (~> 4.9.4)
+      mini_magick (~> 4.11.0)
 
 GEM
   remote: https://rubygems.org/
