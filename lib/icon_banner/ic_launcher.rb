@@ -11,7 +11,7 @@ module IconBanner
 
     def generate_banner(path, label, color, font)
       size = 1024
-      font_size = 120 - ([label.length - 12, 0].max * 12)
+      font_size = 140 - ([label.length - 12, 0].max * 12)
 
       # Start by computing the text
       MiniMagick::Tool::Convert.new do |convert|
@@ -34,11 +34,11 @@ module IconBanner
       # margin = 20 - original
       margin = 100
       # padding = 60 - original
-      padding = 20
+      padding = 60
       radius = 25
       width = banner.width + padding * 2
       # height = 262 - original
-      height = 220
+      height = 242
 
       # Then restart the image and apply the banner
       MiniMagick::Tool::Convert.new do |convert|
